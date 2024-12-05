@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Example</title>
+</head>
+<body>
+
+    <custom-header>
+        <span slot="title">Laboratorio 2</span>
+        <div slot="nav-links">
+            <a href="#">Home</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="Table.html">Tabla</a>
+            <a href="gallery.html">Galeria</a>
+        </div>
+    </custom-header>
+
+    <main-container>
+        <span slot="content">Bienvenidos</span>
+    </main-container>
+    
+    <custom-footer>
+        <span slot="footer-bottom">© 2024 Todos los derechos reservados</span>
+    </custom-footer>
+
+    <script src="main.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>

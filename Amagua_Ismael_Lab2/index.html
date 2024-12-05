@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aplicación Web</title>
+</head>
+<body>
+    <custom-header>
+        <span slot="title">Laboratorio Web</span>
+    </custom-header>
+   <custom-menu></custom-menu>
+   <custom-main>
+       <social-profile></social-profile>
+   </custom-main>
+   <custom-footer></custom-footer>
+
+   <script src="./components/header.js"></script>
+   <script src="./components/footer.js"></script>
+   <script src="./components/main.js"></script>
+   <script src="./components/menu.js"></script>
+   <script src="./components/social-profile.js"></script>
+   <script src="./components/custom-table.js"></script>
+   <script src="./components/gallery.js"></script>
+   <script>
+       document.addEventListener('navigate', (e) => {
+           const main = document.querySelector('custom-main');
+           switch (e.detail) {
+               case 'profile':
+                   main.innerHTML = '<social-profile></social-profile>';
+                   break;
+               case 'table':
+                   main.innerHTML = '<custom-table></custom-table>';
+                   break;
+               case 'gallery':
+                   main.innerHTML = '<gallery-page></gallery-page>';
+                   break;
+           }
+       });
+   </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Example</title>
+</head>
+<body>
+
+    <custom-header>
+        <span slot="title">Laboratorio 2</span>
+        <div slot="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Perfil</a>
+            <a href="Table.html">Tabla</a>
+            <a href="#">Galeria</a>
+        </div>
+    </custom-header>
+    <social-profile>
+        <img slot="profile-pic" src="https://i.pinimg.com/736x/e6/89/9b/e6899b3480b514a8dbd2a2f17f5611cb.jpg" alt="Imagen del Perfil" />
+        
+        <span slot="username">Hermano Peppa</span>
+
+        <span slot="bio">Apasionado por las Peppas.</span>
+
+        <span slot="follow-button">Seguir</span>
+
+        <span slot="message-button">Enviar mensaje</span>
+    </social-profile>
+    
+    
+    <custom-footer>
+        <span slot="footer-bottom">© 2024 Todos los derechos reservados</span>
+    </custom-footer>
+
+    <script src="main.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="perfil.js"></script>
+
+</body>
+</html>

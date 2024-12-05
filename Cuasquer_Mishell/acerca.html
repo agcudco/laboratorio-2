@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <style>
+    
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+            gap: 20px; /* Espaciado entre las tarjetas */
+            justify-items: center;
+            padding: 10px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h3 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <mi-menu></mi-menu>
+    <mi-footer></mi-footer>
+    <h1>Galería de imágenes de la NASA</h1>
+    <div id="gallery" class="gallery"></div>
+    <script src="acerca.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
